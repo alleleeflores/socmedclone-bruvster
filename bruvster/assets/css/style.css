@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oxygen', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+    list-style: none;
+    font-size: 16px;
+    color: #000000;
+}
+
+html, body{
+    height: 100%;
+}
+
+.main-page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    grid-template-rows: 1fr min-content;
+}
+
+/* -------------------------------- LEFT ----------------------------------- */
+.left{
+    background-color: #000000;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.left .welcome{
+    font-size: 3.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.left img{
+    height: 50vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------- RIGHT ----------------------------------- */
+.right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+    background-color: #1DF301;
+}
+
+.right .middle-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.right .middle-content img{
+    width: 70%;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right .middle-content h1{
+    font-size: 2.8rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.right .middle-content h4{
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.right .middle-content a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.8rem 0;
+    padding: 0.9rem;
+    border: .1rem solid #000000;
+    border-radius: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+a.sign-up{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+a.log-in{
+    color: #000000;
+}
